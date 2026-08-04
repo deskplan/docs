@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="DeskPlan">
+  <title>DeskPlan</title>
+  <!-- Source mark : glyphe blanc « DP » sur badge bleu X (#01426A), pastille orange
+       X (#EC6608). Theme-safe : jamais sur fond blanc — le badge porte le contraste. -->
+  <rect width="512" height="512" rx="116" fill="#01426A"/>
+  <text x="256" y="272" text-anchor="middle" dominant-baseline="central"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="236" font-weight="800" letter-spacing="-8" fill="#ffffff">DP</text>
+  <circle cx="398" cy="392" r="27" fill="#EC6608"/>
+</svg>

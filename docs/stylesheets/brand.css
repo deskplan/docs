@@ -1,0 +1,17 @@
+/* Couleurs de marque DeskPlan (bleu X / orange X) appliquées au thème Material. */
+[data-md-color-primary="custom"] {
+  --md-primary-fg-color: #01426A;
+  --md-primary-fg-color--light: #2E6E96;
+  --md-primary-fg-color--dark: #012E49;
+}
+[data-md-color-accent="custom"] {
+  --md-accent-fg-color: #EC6608;
+  --md-accent-fg-color--transparent: rgba(236, 102, 8, 0.1);
+}
+/* Mode sombre : orange éclairci pour le contraste. */
+[data-md-color-scheme="slate"][data-md-color-accent="custom"] {
+  --md-accent-fg-color: #FF7E2E;
+}
+[data-md-color-scheme="slate"] {
+  --md-typeset-a-color: #6BA4D8;
+}

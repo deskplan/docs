@@ -1,0 +1,80 @@
+site_name: DeskPlan — Documentation
+site_description: Gestion du personnel et des bureaux des laboratoires CPHT & CMLS
+site_author: IDCS
+site_url: https://deskplan.github.io/docs/
+docs_dir: docs
+repo_url: https://github.com/deskplan/docs
+repo_name: deskplan/docs
+# NB : la documentation de DÉPLOIEMENT n'est PAS incluse ici (fichier deploy/DEPLOYMENT.md,
+# hors de docs/) : elle contient des détails d'infrastructure et n'est pas publiée sur Pages.
+
+theme:
+  name: material
+  language: fr
+  logo: assets/deskplan-mark-white.svg
+  favicon: assets/favicon.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Mode clair
+  features:
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/brand.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - tables
+  - toc:
+      permalink: true
+
+copyright: © IDCS — École polytechnique
+
+nav:
+  - Accueil: index.md
+  - Guide utilisateur:
+      - Connexion & rôles: guide/connexion.md
+      - Annuaire: guide/annuaire.md
+      - Plans des bureaux: guide/bureaux.md
+      - Personnel: guide/personnel.md
+      - Interroger (IA): guide/interroger.md
+      - Qualité des données: guide/qualite.md
+  - Administration:
+      - Utilisateurs & droits: admin/utilisateurs.md
+      - Annuaire LDAP: admin/ldap.md
+      - Double authentification: admin/securite.md
+      - Matériel GLPI: admin/glpi.md
+  - Technique:
+      - Architecture: technique/architecture.md
+      - Authentification: technique/authentification.md
+      - Modèle de données: technique/modele-donnees.md
+      - API REST: technique/api.md
+  - Sécurité:
+      - Audit de sécurité: securite/audit.md
+      - Modèle de menace: securite/modele-menace.md
