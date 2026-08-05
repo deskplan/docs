@@ -12,6 +12,8 @@ theme:
   name: material
   language: fr
   custom_dir: overrides
+  # Mulish hébergée localement (voir stylesheets/brand.css) — pas de Google Fonts.
+  font: false
   logo: assets/deskplan-mark-white.svg
   favicon: assets/favicon.svg
   palette:
