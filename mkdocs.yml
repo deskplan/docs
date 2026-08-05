@@ -11,6 +11,7 @@ repo_name: deskplan/docs
 theme:
   name: material
   language: fr
+  custom_dir: overrides
   logo: assets/deskplan-mark-white.svg
   favicon: assets/favicon.svg
   palette:

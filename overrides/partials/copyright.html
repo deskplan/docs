@@ -1,0 +1,10 @@
+{#-
+  Pied de page : logo IDCS + mention institutionnelle. Remplace le partial
+  `copyright` par défaut de Material.
+-#}
+<div class="md-copyright">
+  <div class="md-copyright__highlight" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+    <img src="{{ 'assets/idcs-logo-white.png' | url }}" alt="IDCS Research Facilities" style="height:26px;width:auto">
+    <span>{{ config.copyright }}</span>
+  </div>
+</div>
