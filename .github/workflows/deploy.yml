@@ -7,10 +7,12 @@ on:
   workflow_dispatch:
 
 # Droits nécessaires au déploiement GitHub Pages.
+# The build needs nothing beyond the source and the Pages configuration it
+# reads to compute the base URL. Publishing rights are granted to the deploy
+# job alone, below, so a pull request build cannot replace what is served.
 permissions:
   contents: read
-  pages: write
-  id-token: write
+  pages: read
 
 # Une seule publication à la fois.
 concurrency:
@@ -38,6 +40,10 @@ jobs:
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
